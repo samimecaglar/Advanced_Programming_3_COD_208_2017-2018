@@ -14,8 +14,8 @@ class Walker {
    x = width/2;
    y = height/2;
    
-   tx = 88880;
-   ty = -10000;
+   tx = 9;
+   ty = 0;
    
    r = int(random(255));
    g = int(random(255));
