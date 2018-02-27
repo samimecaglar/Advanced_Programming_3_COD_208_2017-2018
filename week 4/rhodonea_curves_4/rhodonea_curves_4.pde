@@ -64,7 +64,7 @@ void draw() {
 
   if (record == true) {
     // Note that #### will be replaced with the frame number. Fancy!
-    beginRecord(PDF, "testest.pdf");
+    beginRecord(PDF, "test2.pdf");
   }
 
   background(0);

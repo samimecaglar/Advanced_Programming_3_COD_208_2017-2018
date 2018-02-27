@@ -16,7 +16,7 @@ float d = 2;
 float c = 0;
 
 float cFac;
-
+float harry = 0.01;
 void setup() {
   size(600,600);
   k = n / d;
@@ -31,11 +31,16 @@ void draw() {
   noFill();
   stroke(255);
   
-  c = map(,0,1000,0,1);
+  cFac = cFac + harry;
   
-  if(c > 2) {
-    
-   c = 0; 
+  c = map(cFac,0,2,0,1);
+  
+  if(cFac > 2) {
+    harry = -0.01;
+  }
+  
+  if(cFac < 0) {
+    harry = 0.01;
   }
   beginShape();
   clear();
