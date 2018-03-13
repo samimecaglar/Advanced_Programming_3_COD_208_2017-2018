@@ -48,7 +48,7 @@ void draw() {
     
     theta = map(i,0,resolution,0,TWO_PI);
     
-    petalLen = cos(k*theta) + c;
+    petalLen = sin(k*theta) + c;
     x = r * petalLen * cos(theta);
     y = r * petalLen * sin(theta);
     point(x,y);
